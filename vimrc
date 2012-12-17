@@ -15,6 +15,9 @@ call add(g:pathogen_disabled, 'omni-cpp-complete')
 " this must come _before_ filetype detection
 call pathogen#infect()
 
+syntax on
+filetype plugin indent on
+
 set pastetoggle=<C-'>
 call togglebg#map("<F5>")
 
