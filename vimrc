@@ -273,3 +273,16 @@ let g:vim_g_open_command = "www-browser"
 "let g:SrcExpl_isUpdateTags = 0
 "let g:SrcExpl_gobackKey = "<SPACE>" 
 "let g:SrcExpl_refreshTime = 100
+
+
+" fix urxvt: scroll through buffers with ctrl-pageup/down
+nmap    <ESC>[5^    <C-PageUp>
+nmap    <ESC>[6^    <C-PageDown>
+nnoremap <C-PageDown> :bn!<CR>
+nnoremap <C-PageUp> :bp!<CR>
+
+nmap <Esc>Oc <C-Right>
+nmap <Esc>Od <C-Left>
+nmap <Esc>Ob <C-Down>
+nmap <Esc>Oa <C-Up>
+
