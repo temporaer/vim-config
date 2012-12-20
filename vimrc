@@ -8,7 +8,7 @@ let g:yankring_history_dir = '/tmp/.schulzh'
 set directory=/tmp/.schulzh
 
 " omni-completion conflicts with clang completion
-call add(g:pathogen_disabled, 'omni-cpp-complete')
+call add(g:pathogen_disabled, 'syntastic')
 "au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 "au BufNewFile,BufRead,BufEnter *.cu,*.cuh  set omnifunc=omni#cpp#complete#Main
 
@@ -162,6 +162,7 @@ if v:version >= '703'
 	set cole=2
 	hi Conceal guibg=white guifg=black
 	let g:tex_conceal="adgm"
+    syn match texMathSymbol '\\w\>' contained conceal
 endif
 
 " quit if only quickfix window left
