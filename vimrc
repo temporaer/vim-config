@@ -272,3 +272,7 @@ let g:vim_g_open_command = "www-browser"
 "let g:SrcExpl_isUpdateTags = 0
 "let g:SrcExpl_gobackKey = "<SPACE>" 
 "let g:SrcExpl_refreshTime = 100
+
+
+" Translation
+let g:trans_default_lang = 'de-DE'
