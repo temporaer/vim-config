@@ -228,7 +228,7 @@ hi CSVColumnOdd  term=bold ctermbg=7 guibg=DarkMagenta
 """"""""""""""""""""""""""""""""""""
 " ctrl-p
 let g:ctrlp_map = '<c-x><c-b>'
-let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 set wildignore+=*/.svn/*,*.so,*/boost/*,*/.mk/*,*/.git/*,*/boost_1_45_0/*
 
 "0 - don't manage working directory.
