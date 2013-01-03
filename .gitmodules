@@ -73,3 +73,6 @@
 [submodule "bundle/trans"]
 	path = bundle/trans
 	url = https://github.com/Rykka/trans.vim.git
+[submodule "bundle/showmarks"]
+	path = bundle/showmarks
+	url = https://github.com/vim-scripts/ShowMarks.git

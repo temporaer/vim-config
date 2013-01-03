@@ -8,7 +8,7 @@ let g:yankring_history_dir = '/tmp/.schulzh'
 set directory=/tmp/.schulzh
 
 " omni-completion conflicts with clang completion
-call add(g:pathogen_disabled, 'omni-cpp-complete')
+call add(g:pathogen_disabled, 'syntastic')
 "au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 "au BufNewFile,BufRead,BufEnter *.cu,*.cuh  set omnifunc=omni#cpp#complete#Main
 
@@ -162,6 +162,7 @@ if v:version >= '703'
 	set cole=2
 	hi Conceal guibg=white guifg=black
 	let g:tex_conceal="adgm"
+    syn match texMathSymbol '\\w\>' contained conceal
 endif
 
 " quit if only quickfix window left
@@ -227,7 +228,7 @@ hi CSVColumnOdd  term=bold ctermbg=7 guibg=DarkMagenta
 """"""""""""""""""""""""""""""""""""
 " ctrl-p
 let g:ctrlp_map = '<c-x><c-b>'
-let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 set wildignore+=*/.svn/*,*.so,*/boost/*,*/.mk/*,*/.git/*,*/boost_1_45_0/*
 
 "0 - don't manage working directory.
@@ -276,3 +277,14 @@ let g:vim_g_open_command = "www-browser"
 
 " Translation
 let g:trans_default_lang = 'de-DE'
+
+" fix urxvt: scroll through buffers with ctrl-pageup/down
+nmap    <ESC>[5^    <C-PageUp>
+nmap    <ESC>[6^    <C-PageDown>
+nnoremap <C-PageDown> :bn!<CR>
+nnoremap <C-PageUp> :bp!<CR>
+
+nmap <Esc>Oc <C-Right>
+nmap <Esc>Od <C-Left>
+nmap <Esc>Ob <C-Down>
+nmap <Esc>Oa <C-Up>
