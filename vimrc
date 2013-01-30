@@ -279,13 +279,5 @@ let g:vim_g_open_command = "www-browser"
 " Translation
 let g:trans_default_lang = 'de-DE'
 
-" fix urxvt: scroll through buffers with ctrl-pageup/down
-nmap    <ESC>[5^    <C-PageUp>
-nmap    <ESC>[6^    <C-PageDown>
-nnoremap <C-PageDown> :bn!<CR>
-nnoremap <C-PageUp> :bp!<CR>
-
-nmap <Esc>Oc <C-Right>
-nmap <Esc>Od <C-Left>
-nmap <Esc>Ob <C-Down>
-nmap <Esc>Oa <C-Up>
+map <Home> :ptnext!<CR>
+map <End> :ptprev!<CR>
