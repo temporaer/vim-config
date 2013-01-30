@@ -96,6 +96,7 @@ let mapleader = ","
 
 " CTAGS
 map <Leader>C :!ctags --sort=foldcase -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+set tags=tags,../cuvnet/src/tags
 
 " Popup Colors
 hi Pmenu ctermfg=0 ctermbg=7
