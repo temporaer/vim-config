@@ -190,6 +190,7 @@ let g:clang_complete_copen=1
 let g:clang_snippets=0
 let g:clang_debug=1
 let g:clang_use_library=0
+"let g:clang_library_path = '/usr/lib'
 
 let g:syntastic_cpp_params='-std=gnu++0x -I . -I ~/pool/include/boost-numeric-bindings -I/home/local/cuv/src -I/usr/include/qt4  -I/usr/include/qt4/QtGui -I../build/src/ui -Wno-deprecated -I ~/checkout/git/mongo/include '
 
