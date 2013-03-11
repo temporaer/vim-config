@@ -1,4 +1,4 @@
-let g:pathogen_disabled = []
+let g:pathogen_disabled = ["showmarks"]
 
 " store temporary files in /tmp, not in network home (bye, bye security...)
 call system("mkdir -p /tmp/.schulzh")
