@@ -229,7 +229,11 @@ hi CSVColumnOdd  term=bold ctermbg=7 guibg=DarkMagenta
 
 """"""""""""""""""""""""""""""""""""
 " ctrl-p
-let g:ctrlp_map = '<c-x><c-b>'
+nmap ; :CtrlPBuffer<CR>
+let g:ctrlp_map = ',t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_switch_buffer = 0
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 set wildignore+=*/.svn/*,*.so,*/boost/*,*/.mk/*,*/.git/*,*/boost_1_45_0/*
 
