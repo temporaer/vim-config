@@ -284,6 +284,12 @@ let g:vim_g_open_command = "www-browser"
 "let g:SrcExpl_gobackKey = "<SPACE>" 
 "let g:SrcExpl_refreshTime = 100
 
+" showmarks
+"<Leader>mt   - Toggles ShowMarks on and off.
+"<Leader>mo   - Forces ShowMarks on.
+"<Leader>mh   - Clears the mark at the current line.
+"<Leader>ma   - Clears all marks in the current buffer.
+"<Leader>mm   - Places the next available mark on the current line.
 
 " Translation
 let g:trans_default_lang = 'de-DE'
