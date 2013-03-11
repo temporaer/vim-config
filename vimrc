@@ -18,7 +18,9 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set pastetoggle=<C-'>
+nmap ,q :set hls!<CR>
+nmap ,l :setlocal number!<CR>
+nmap ,o :setlocal paste!<CR>
 call togglebg#map("<F5>")
 
 se bg=dark
