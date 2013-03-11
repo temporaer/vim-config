@@ -31,6 +31,7 @@ se nowrap
 se diffopt=iwhite,filler,icase
 se ssop="curdir,folds,options,tabpages,winsize"
 set incsearch
+set ignorecase
 set smartcase
 
 set spelllang=de,en
